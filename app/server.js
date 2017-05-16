@@ -7,6 +7,7 @@ var express = require('express')
 var app = express();
 
 const PORT = 5000;
+var count = 0;
 
 app.get('/', function(req, res) {
     res.send('Server has started again!');
@@ -14,7 +15,7 @@ app.get('/', function(req, res) {
 
 app.get('/getTest', function(req, res) {
     appInsights.client.trackRequest(req, res);
-    res.send('testing getTest again and again');
+    res.send('the getTest rest api has been called ' + count++);
 });
 
 app.listen(PORT);

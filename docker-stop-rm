@@ -1,0 +1,5 @@
+# -p should be the port EXPOSE variable, app name should be a variable
+docker stop `docker ps | grep appinsights-test-node-app | awk '{print $1}'`
+docker rm `docker ps -a | grep appinsights-test-node-app | awk '{print $1}'`
+docker build -t traceyt/appinsights-test-node-app .
+docker run -p5000:5000 traceyt/appinsights-test-node-app
