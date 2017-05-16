@@ -7,6 +7,5 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(path.join(__dirname), 'build'),
         publicPath: "build/"
-    },
-    watch: true
+    }
 };

@@ -1,4 +1,5 @@
 # -p should be the port EXPOSE variable, app name should be a variable
+# can add a -f (force) to the rm to stop and remove
 docker stop `docker ps | grep appinsights-test-node-app | awk '{print $1}'`
 docker rm `docker ps -a | grep appinsights-test-node-app | awk '{print $1}'`
 docker build -t traceyt/appinsights-test-node-app .
