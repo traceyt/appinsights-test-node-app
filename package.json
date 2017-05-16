@@ -2,9 +2,9 @@
     "name": "appinsights-test-node",
     "version": "1.0.0",
     "description": "",
-    "main": "./build/bundle.js",
+    "main": "./app/server.js",
     "scripts": {
-        "start": "node server.js",
+        "start": "node ./app/server.js",
         "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors"
     },
     "repository": {
@@ -22,7 +22,6 @@
         "express": "^4.15.2"
     },
     "devDependencies": {
-        "rimraf": "^2.6.1",
         "webpack": "^2.5.1",
         "webpack-dev-server": "^2.4.5"
     }

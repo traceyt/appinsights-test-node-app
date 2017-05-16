@@ -60,193 +60,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "build/";
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 19);
-/******/ })
-/************************************************************************/
-/******/ ([
-/* 0 */
-/***/ (function(module, exports) {
-
-module.exports = require("_http_client");
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports) {
-
-module.exports = require("buffer");
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-module.exports = require("console");
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports) {
-
-module.exports = require("crypto");
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports) {
-
-module.exports = require("events");
-
-/***/ }),
-/* 5 */
-/***/ (function(module, exports) {
-
-module.exports = require("fs");
-
-/***/ }),
-/* 6 */
-/***/ (function(module, exports) {
-
-module.exports = require("http");
-
-/***/ }),
-/* 7 */
-/***/ (function(module, exports) {
-
-module.exports = require("https");
-
-/***/ }),
-/* 8 */
-/***/ (function(module, exports) {
-
-module.exports = require("module");
-
-/***/ }),
-/* 9 */
-/***/ (function(module, exports) {
-
-module.exports = require("net");
-
-/***/ }),
-/* 10 */
-/***/ (function(module, exports) {
-
-module.exports = require("os");
-
-/***/ }),
-/* 11 */
-/***/ (function(module, exports) {
-
-module.exports = require("path");
-
-/***/ }),
-/* 12 */
-/***/ (function(module, exports) {
-
-module.exports = require("querystring");
-
-/***/ }),
-/* 13 */
-/***/ (function(module, exports) {
-
-module.exports = require("stream");
-
-/***/ }),
-/* 14 */
-/***/ (function(module, exports) {
-
-module.exports = require("timers");
-
-/***/ }),
-/* 15 */
-/***/ (function(module, exports) {
-
-module.exports = require("tty");
-
-/***/ }),
-/* 16 */
-/***/ (function(module, exports) {
-
-module.exports = require("url");
-
-/***/ }),
-/* 17 */
-/***/ (function(module, exports) {
-
-module.exports = require("util");
-
-/***/ }),
-/* 18 */
-/***/ (function(module, exports) {
-
-module.exports = require("zlib");
-
-/***/ }),
-/* 19 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// identity function for calling harmony imports with the correct context
-/******/ 	__webpack_require__.i = function(value) { return value; };
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, {
-/******/ 				configurable: false,
-/******/ 				enumerable: true,
-/******/ 				get: getter
-/******/ 			});
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "build/";
+/******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 63);
@@ -256,7 +70,7 @@ module.exports = require("zlib");
 /* 0 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(11);
+module.exports = require("path");
 
 /***/ }),
 /* 1 */
@@ -414,13 +228,13 @@ module.exports = Logging;
 /* 3 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(5);
+module.exports = require("fs");
 
 /***/ }),
 /* 4 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(6);
+module.exports = require("http");
 
 /***/ }),
 /* 5 */
@@ -764,7 +578,7 @@ function newObject() {
 /* 8 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(16);
+module.exports = require("url");
 
 /***/ }),
 /* 9 */
@@ -2215,19 +2029,19 @@ function status (code) {
 /* 20 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(4);
+module.exports = require("events");
 
 /***/ }),
 /* 21 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(7);
+module.exports = require("https");
 
 /***/ }),
 /* 22 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(17);
+module.exports = require("util");
 
 /***/ }),
 /* 23 */
@@ -3751,25 +3565,25 @@ exports = module.exports = function(a, b){
 /* 28 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(3);
+module.exports = require("crypto");
 
 /***/ }),
 /* 29 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(9);
+module.exports = require("net");
 
 /***/ }),
 /* 30 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(10);
+module.exports = require("os");
 
 /***/ }),
 /* 31 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(13);
+module.exports = require("stream");
 
 /***/ }),
 /* 32 */
@@ -7842,13 +7656,13 @@ function sortByRangeStart (a, b) {
 /* 59 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(8);
+module.exports = require("module");
 
 /***/ }),
 /* 60 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(15);
+module.exports = require("tty");
 
 /***/ }),
 /* 61 */
@@ -8136,7 +7950,6 @@ appInsights.start();
 var express = __webpack_require__(62)
 var app = express();
 
-const PORT = 5000;
 var count = 0;
 
 app.get('/', function(req, res) {
@@ -8145,11 +7958,11 @@ app.get('/', function(req, res) {
 
 app.get('/getTest', function(req, res) {
     appInsights.client.trackRequest(req, res);
-    res.send('the getTest rest api has been called ' + count++);
+    res.send('the getTest rest api has been called this many times ' + count++);
 });
 
-app.listen(PORT);
-console.log('Running on http://localhost:' + PORT);
+app.listen(5000);
+console.log('Running on http://localhost:' + 5000);
 
 /***/ }),
 /* 64 */
@@ -33432,40 +33245,37 @@ function patchNextTick() {
 /* 157 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(0);
+module.exports = require("_http_client");
 
 /***/ }),
 /* 158 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(1);
+module.exports = require("buffer");
 
 /***/ }),
 /* 159 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(2);
+module.exports = require("console");
 
 /***/ }),
 /* 160 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(12);
+module.exports = require("querystring");
 
 /***/ }),
 /* 161 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(14);
+module.exports = require("timers");
 
 /***/ }),
 /* 162 */
 /***/ (function(module, exports) {
 
-module.exports = __webpack_require__(18);
-
-/***/ })
-/******/ ]);
+module.exports = require("zlib");
 
 /***/ })
 /******/ ]);
