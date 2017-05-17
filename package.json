@@ -1,29 +1,33 @@
 {
-    "name": "appinsights-test-node",
-    "version": "1.0.0",
-    "description": "",
-    "main": "./build/bundle.js",
-    "scripts": {
-        "start": "node server.js",
-        "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/traceyt/appinsights-test-node-app.git"
-    },
-    "author": "Tracey Trewin",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/traceyt/appinsights-test-node-app/issues"
-    },
-    "homepage": "https://github.com/traceyt/appinsights-test-node-app#readme",
-    "dependencies": {
-        "applicationinsights": "^0.20.0",
-        "express": "^4.15.2"
-    },
-    "devDependencies": {
-        "rimraf": "^2.6.1",
-        "webpack": "^2.5.1",
-        "webpack-dev-server": "^2.4.5"
-    }
+  "name": "appinsights-test-node",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "webpack-dev-server --content-base build/",
+    "start": "rm -rf ./build && webpack --config  webpack.config.server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traceyt/appinsights-test-node-app.git"
+  },
+  "author": "Tracey Trewin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/traceyt/appinsights-test-node-app/issues"
+  },
+  "homepage": "https://github.com/traceyt/appinsights-test-node-app#readme",
+  "dependencies": {
+    "applicationinsights": "^0.20.0",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+	"babel-core": "^6.23.1",
+	"babel-loader": "^6.3.2",
+	"babel-preset-env": "^1.1.10",
+	"babel-preset-react": "^6.23.0",
+	"start-server-webpack-plugin": "^2.1.2",
+	"webpack": "^2.2.1",
+	"webpack-dev-server": "^2.4.1",
+	"webpack-node-externals": "^1.5.4"
+  }
 }
