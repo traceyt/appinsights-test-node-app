@@ -1,16 +1,22 @@
-var path = require('path');
-
-var contextPath = path.resolve(__dirname, 'app');
-var buildPath = path.resolve(__dirname, 'public', 'build');
+var webpack = require('webpack');
 
 module.exports = {
-    entry: {
-        javascript: './app/server.js'
-    },
-    target: 'node',
-    output: {
-        path: buildPath,
-        filename: 'bundle.js',
-        path: path.resolve(path.join(__dirname), 'build'),
-    }
-}
+  context: __dirname,
+  entry: [
+    // Add the client which connects to our middleware
+    // You can use full urls like 'webpack-hot-middleware/client?path=http://localhost:3000/__webpack_hmr'
+    // useful if you run your app from another point like django
+    'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000'
+  ],
+  output: {
+    path: __dirname,
+    publicPath: '/',
+    filename: 'bundle.js'
+  },
+  devtool: '#source-map',
+  plugins: [
+    new webpack.optimize.OccurenceOrderPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()
+  ],
+};
