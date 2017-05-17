@@ -17,5 +17,5 @@ app.get('/getTest', function(req, res) {
     res.send('the getTest rest api has been called this many times ' + count++);
 });
 
-app.listen(5000);
-console.log('Running on http://localhost:' + 5000);
+app.listen(5001);
+console.log('Running on http://localhost:' + 5001);

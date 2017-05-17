@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/build/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 63);
@@ -7961,8 +7961,8 @@ app.get('/getTest', function(req, res) {
     res.send('the getTest rest api has been called this many times ' + count++);
 });
 
-app.listen(5000);
-console.log('Running on http://localhost:' + 5000);
+app.listen(5001);
+console.log('Running on http://localhost:' + 5001);
 
 /***/ }),
 /* 64 */
