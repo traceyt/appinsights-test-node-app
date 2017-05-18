@@ -2,5 +2,12 @@
 # can add a -f (force) to the rm to stop and remove
 docker stop `docker ps | grep appinsights-test-node-app | awk '{print $1}'`
 docker rm `docker ps -a | grep appinsights-test-node-app | awk '{print $1}'`
-docker build -t traceyt/appinsights-test-node-app .
-docker run -p5000:5000 traceyt/appinsights-test-node-app
+docker build -t traceyt/appinsights-test-node-i .
+docker run -p3000:3000 -d --name traceyt/appinsights-test-node-app traceyt/appinsights-test-node-i
+
+docker build -t traceyt/appinsights-test-node-dev-i -f dev.Dockerfile . 
+docker run --name appinsights-test-node-dev-app -p 3000:3000 -v /gitRepo/appinsights-test-node:/usr/src/app traceyt/appinsights-test-node-dev-i
+
+// remove all images
+docker rmi $(docker images -a -q)
+https://www.digitalocean.com/community/tutorials/how-to-remove-docker-images-containers-and-volumes 

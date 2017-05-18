@@ -9,7 +9,7 @@ module.exports = {
     target: 'node',
     externals: [nodeExternals({ whitelist: ["webpack/hot/poll?1000"] })],
     output: {
-        path: path.join(__dirname, '.build'),
+        path: path.join(__dirname, './.build'),
         filename: 'bundle.js',
         publicPath: '/'
     },
